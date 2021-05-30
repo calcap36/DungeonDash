@@ -16,9 +16,11 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED
 		$AnimatedSprite.play("run")
+		$AnimatedSprite.flip_h = false 
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -SPEED
 		$AnimatedSprite.play("run")
+		$AnimatedSprite.flip_h = true
 	else:
 		velocity.x = 0
 		if on_ground == true:
@@ -37,6 +39,9 @@ func _physics_process(delta):
 		on_ground= false 
 		if velocity.y < 0:
 			$AnimatedSprite.play("jump")
+		else:
+			$AnimatedSprite.play("fall")
+		
 		
 		
 	
