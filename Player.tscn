@@ -38,17 +38,22 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 6.36644, 12.7189 )
+extents = Vector2( 5.32067, 10.8849 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -2.82843, 2.20971 )
-scale = Vector2( 0.886863, 0.880556 )
+position = Vector2( -6.80831, 4.45717 )
+scale = Vector2( 0.727668, 0.759072 )
 frames = SubResource( 1 )
 animation = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3.15238, 5.19251 )
+position = Vector2( -6.79433, 7.12497 )
 shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+smoothing_speed = 20.0
