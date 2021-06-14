@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0.png-6d5d5ae2d9713343bb3229937071b4fb.stex"
+path="res://.import/back_cave.png-70e7b535cd96625db9a1d9c31518dd08.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Obstacles/16x16DUNGEONtileset (1)/0.png"
-dest_files=[ "res://.import/0.png-6d5d5ae2d9713343bb3229937071b4fb.stex" ]
+source_file="res://Sprites/Obstacles/back_cave.png"
+dest_files=[ "res://.import/back_cave.png-70e7b535cd96625db9a1d9c31518dd08.stex" ]
 
 [params]
 

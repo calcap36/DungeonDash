@@ -26,9 +26,8 @@ animations = [ {
 [node name="obstacle" type="KinematicBody2D"]
 
 [node name="fire" type="AnimatedSprite" parent="."]
+position = Vector2( -0.314987, 0 )
 frames = SubResource( 1 )
 animation = "Fire"
-frame = 3
-playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
