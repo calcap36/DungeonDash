@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/adventurer-stand-02.png-e7e116ea24f5e6b9de1649c360bb9654.stex"
+path="res://.import/cavesofgallet_tiles.png-facf95823b35ee3bfda6e9c41c487dc7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Individual Sprites/adventurer-stand-02.png"
-dest_files=[ "res://.import/adventurer-stand-02.png-e7e116ea24f5e6b9de1649c360bb9654.stex" ]
+source_file="res://16x16DUNGEONtileset (1)/cavesofgallet_tiles.png"
+dest_files=[ "res://.import/cavesofgallet_tiles.png-facf95823b35ee3bfda6e9c41c487dc7.stex" ]
 
 [params]
 

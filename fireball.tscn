@@ -29,5 +29,6 @@ animations = [ {
 position = Vector2( -0.314987, 0 )
 frames = SubResource( 1 )
 animation = "Fire"
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
