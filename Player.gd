@@ -5,6 +5,7 @@ const SPEED = 60
 const GRAVITY = 9.8
 const JUMP_POWER = -230
 const FLOOR = Vector2(0, -1)
+const TYPE = "Player"
 
 var velocity = Vector2()
 
