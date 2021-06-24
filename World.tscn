@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Obstacles/back_cave.png" type="Texture" id=2]
 [ext_resource path="res://ground tileset2.tres" type="TileSet" id=3]
 [ext_resource path="res://tileset3tres.tres" type="TileSet" id=4]
 [ext_resource path="res://spikes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprites/background1.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/background2.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/background3.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/background4a.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/background4b.png" type="Texture" id=10]
 
 [node name="World" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -24,16 +29,91 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 655380, -1610612732, 0, 655381, -1610612731, 0, 655382, -1610612731, 0, 655383, -1610612731, 0, 655384, 1610612740, 0 )
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="single background" type="ParallaxBackground" parent="."]
 scroll_base_scale = Vector2( 0.5, 1 )
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="single layer" type="ParallaxLayer" parent="single background"]
 motion_mirroring = Vector2( 380, 0 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Sprite" type="Sprite" parent="single background/single layer"]
 position = Vector2( 156.964, 89.4622 )
 scale = Vector2( 0.195844, 0.0954683 )
 texture = ExtResource( 2 )
+offset = Vector2( 160, 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="layer 1" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.5, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="layer 1"]
+motion_mirroring = Vector2( 380, 0 )
+
+[node name="Sprite" type="Sprite" parent="layer 1/ParallaxLayer"]
+position = Vector2( 156.964, 89.4622 )
+scale = Vector2( 0.195844, 0.0954683 )
+texture = ExtResource( 6 )
+offset = Vector2( 160, 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="layer 2" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.5, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="layer 2"]
+motion_mirroring = Vector2( 380, 0 )
+
+[node name="Sprite" type="Sprite" parent="layer 2/ParallaxLayer"]
+position = Vector2( 156.964, 89.4622 )
+scale = Vector2( 0.195844, 0.0954683 )
+texture = ExtResource( 7 )
+offset = Vector2( 160, 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="layer 3" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.5, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="layer 3"]
+motion_mirroring = Vector2( 380, 0 )
+
+[node name="Sprite" type="Sprite" parent="layer 3/ParallaxLayer"]
+position = Vector2( 156.964, 89.4622 )
+scale = Vector2( 0.195844, 0.0954683 )
+texture = ExtResource( 8 )
+offset = Vector2( 160, 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="layer 4" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.5, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="layer 4"]
+motion_mirroring = Vector2( 380, 0 )
+
+[node name="Sprite" type="Sprite" parent="layer 4/ParallaxLayer"]
+position = Vector2( 156.964, 89.4622 )
+scale = Vector2( 0.195844, 0.0954683 )
+texture = ExtResource( 9 )
+offset = Vector2( 160, 50 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="layer 5" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.5, 1 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="layer 5"]
+motion_mirroring = Vector2( 380, 0 )
+
+[node name="Sprite" type="Sprite" parent="layer 5/ParallaxLayer"]
+position = Vector2( 156.964, 89.4622 )
+scale = Vector2( 0.195844, 0.0954683 )
+texture = ExtResource( 10 )
 offset = Vector2( 160, 50 )
 __meta__ = {
 "_edit_lock_": true
@@ -44,3 +124,6 @@ position = Vector2( 104.679, 153.932 )
 
 [node name="spikes2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 151.052, 153.962 )
+
+[node name="spikes3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 199.244, 153.962 )

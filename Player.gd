@@ -6,6 +6,7 @@ const GRAVITY = 9.8
 const JUMP_POWER = -230
 const FLOOR = Vector2(0, -1)
 const TYPE = "Player"
+const SPRINT = 100 
 
 var velocity = Vector2()
 
@@ -38,13 +39,11 @@ func _physics_process(delta):
 	else:
 		$CollisionShape2D.disabled = false
 		$SlideCollider.disabled = true
-
+		
+	 
 	
 	
 	velocity.y += GRAVITY 	
-	
-
-
 	
 	if is_on_floor():
 		on_ground = true
