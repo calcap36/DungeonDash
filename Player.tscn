@@ -36,20 +36,20 @@ animations = [ {
 "name": "jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ) ],
 "loop": true,
-"name": "fall",
-"speed": 5.0
+"name": "run",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "stand",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 13 ) ],
 "loop": true,
-"name": "run",
-"speed": 10.0
+"name": "fall",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -82,4 +82,5 @@ limit_top = 0
 limit_right = 1000
 limit_bottom = 180
 smoothing_enabled = true
+smoothing_speed = 10.0
 editor_draw_limits = true
