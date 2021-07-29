@@ -6,9 +6,10 @@ const GRAVITY = 9.8
 const JUMP_POWER = -230
 const FLOOR = Vector2(0, -1)
 const TYPE = "Player"
-const SPRINT = 100 
+const SPRINT = 120 	 
 
 var velocity = Vector2()
+
 
 var on_ground = false
 var animation = "idle"
@@ -39,7 +40,8 @@ func _physics_process(delta):
 	else:
 		$CollisionShape2D.disabled = false
 		$SlideCollider.disabled = true
-		
+	
+	
 	 
 	
 	
@@ -58,3 +60,8 @@ func _physics_process(delta):
 		
 	$AnimatedSprite.play(animation)
 	velocity = move_and_slide(velocity, FLOOR)
+	
+
+
+	
+	 

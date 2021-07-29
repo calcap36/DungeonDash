@@ -2,5 +2,5 @@ extends KinematicBody2D
 
 
 func _on_Area2D_body_entered(body):
-	if body.get("TYPE") == "Player":
+	if body.is_in_group("Player"):
 		get_tree().reload_current_scene()
