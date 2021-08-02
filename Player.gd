@@ -19,6 +19,7 @@ var dashing = false
 var on_ground = false
 var animation = "idle"
 func _physics_process(delta): 
+	dash()
 	
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED
@@ -47,8 +48,22 @@ func _physics_process(delta):
 		$SlideCollider.disabled = true
 	
 	
-	 
-	
+func dash():
+	if is_on_floor():
+		candash = true 
+	if Input.is_action_pressed("ui_right"):
+		dashdirection = Vector2(1,0)
+	if Input.is_action_pressed("ui_left"):
+		dashdirection = Vector2(-1,0)
+		
+	if Input.is_action_just_pressed("ui_dash") and candash:
+		velocity = dashdirection.normalized() * 1600
+		#candash = false
+		#dashing = true 
+		#yield(get_tree().create_timer(0.2),"timeout")
+		#dashing = false
+
+
 	
 	velocity.y += GRAVITY 	
 	
@@ -66,15 +81,6 @@ func _physics_process(delta):
 	$AnimatedSprite.play(animation)
 	velocity = move_and_slide(velocity, FLOOR)
 	
-func dash():
-	if is_on_floor():
-		candash = true 
-	if Input.is_action_pressed("ui_right"):
-		dashdirection = Vector2(1,0)
-	if Input.is_action_pressed("ui_left"):
-		dashdirection = Vector2(-1,0)
-		
-		
 
 	
 	 
