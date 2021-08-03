@@ -57,7 +57,9 @@ func dash():
 		dashdirection = Vector2(-1,0)
 		
 	if Input.is_action_just_pressed("ui_dash") and candash:
-		velocity = dashdirection.normalized() * 1600
+		velocity = dashdirection.normalized() * 3200
+		
+		
 		#candash = false
 		#dashing = true 
 		#yield(get_tree().create_timer(0.2),"timeout")
