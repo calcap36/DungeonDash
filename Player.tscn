@@ -36,6 +36,11 @@ animations = [ {
 "name": "jump",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 9 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "fall",
@@ -45,11 +50,6 @@ animations = [ {
 "loop": true,
 "name": "stand",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "run",
-"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -69,7 +69,6 @@ position = Vector2( -8.47875, 7.35033 )
 scale = Vector2( 0.660851, 0.656739 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -84,7 +83,7 @@ shape = SubResource( 3 )
 current = true
 limit_left = -1
 limit_top = 0
-limit_right = 1500
+limit_right = 2500
 limit_bottom = 180
 smoothing_enabled = true
 smoothing_speed = 10.0
