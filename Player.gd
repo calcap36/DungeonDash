@@ -7,6 +7,7 @@ const JUMP_POWER = -230
 const FLOOR = Vector2(0, -1)
 const TYPE = "Player"
 const SPRINT = 120 	 
+const SLIDE = 80
 
 var velocity = Vector2()
 
@@ -40,12 +41,14 @@ func _physics_process(delta):
 			on_ground = false 
 			
 	if Input.is_action_pressed("ui_down"):
+		velocity.x = SLIDE
 		animation = "slide"
 		$CollisionShape2D.disabled = true
 		$SlideCollider.disabled = false
 	else:
 		$CollisionShape2D.disabled = false
 		$SlideCollider.disabled = true
+	
 	
 	#dash 
 func dash():
