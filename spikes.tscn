@@ -10,7 +10,7 @@ extents = Vector2( 1.31014, 1.08412 )
 extents = Vector2( 6.82184, 5.56048 )
 
 [node name="spikes" type="KinematicBody2D"]
-position = Vector2( 1.71102, 1.16132 )
+position = Vector2( 8.45725, 7.05871 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

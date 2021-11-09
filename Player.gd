@@ -61,13 +61,13 @@ func dash():
 		
 	if Input.is_action_just_pressed("ui_dash") and candash:
 		velocity = dashdirection.normalized() * 3200
+		#candash = false 
+		#dashing = true
+		#yield(get_tree().create_timer(0.2), "timeout")
+		#dashing = false 
 		
-		#dash timer doesn't work 
-		#candash = false
-		#dashing = true 
-		#yield(get_tree().create_timer(0.2),"timeout")
-		#dashing = false
-
+		
+		
 
 	#jump
 	velocity.y += GRAVITY 	

@@ -109,7 +109,7 @@ __meta__ = {
 position = Vector2( 2486, 29 )
 
 [node name="spikes" parent="." instance=ExtResource( 5 )]
-position = Vector2( 122, 155 )
+position = Vector2( 122, 154 )
 
 [node name="spikes2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 90, 154 )
@@ -199,7 +199,7 @@ position = Vector2( 565, 116 )
 position = Vector2( 276, 155 )
 
 [node name="Boulder6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 619, 103 )
+position = Vector2( 594, 105 )
 
 [node name="Boulder" parent="." instance=ExtResource( 2 )]
 position = Vector2( 398, 154 )

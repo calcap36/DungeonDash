@@ -55,8 +55,8 @@ margin_bottom = 32.0
 [node name="Title Text" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
 margin_right = 204.0
 margin_bottom = 32.0
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Dungeon Dash "
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
@@ -82,8 +82,8 @@ margin_bottom = 16.0
 margin_right = 7.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 7, 0 )
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
 text = ">"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
@@ -91,8 +91,8 @@ margin_left = 11.0
 margin_right = 60.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 49, 0 )
-custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Start "
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
@@ -108,8 +108,8 @@ margin_bottom = 16.0
 margin_right = 7.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 7, 0 )
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
 text = ">"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
@@ -117,9 +117,9 @@ margin_left = 11.0
 margin_right = 64.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 49, 0 )
-custom_fonts/font = SubResource( 5 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
 text = "Options"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
@@ -136,8 +136,8 @@ margin_bottom = 16.0
 margin_right = 7.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 7, 0 )
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
 text = ">"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
@@ -145,8 +145,8 @@ margin_left = 11.0
 margin_right = 60.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 49, 0 )
-custom_fonts/font = SubResource( 7 )
 custom_colors/font_color = Color( 1, 0.921569, 0.921569, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
 text = "Exit"
